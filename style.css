@@ -1,0 +1,87 @@
+.top-bar{
+    background-color:#437fc7;  
+}
+
+.top-bar a{
+    color: white;
+    text-decoration: none;
+    margin-right: 3rem;
+}
+
+.top-bar a:hover{
+    text-decoration: underline;
+}
+
+.navbar{
+    background-color: #edf6ff;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.nav-item{
+    padding-left: 1rem;
+}
+
+.navbar-brand img{
+    height: 150px;
+    width: auto;
+    
+}
+
+#avatar{
+    height: 60vh;
+    width: 100%;
+    margin-top: 1rem;
+    margin-right: 0;
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-right: 100%;
+        width: 300%;
+    }
+    to{
+        margin-left: 0%;
+        width: 100% ;
+    }
+}
+
+.head-text{
+    margin: auto;
+    animation-duration: 2.5s;
+    animation-name: slideup;
+}
+
+@keyframes slideup{
+    from{
+        margin-top: 100%;
+        height: 300%;
+    }
+    to{
+        margin-top: 12%;
+        height: 100%;
+    }
+}
+
+.p-text{
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+.page-break{
+    height: 2rem;
+    background-color: #437fc7;
+}
+
+.project{
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 3px 3px 3px gray;
+}
+
+.project-img{
+    height: 50vh;
+    width: 100%;
+}
