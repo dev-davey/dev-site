@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="undefined" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -36,7 +38,7 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="./projects.html" class="nav-link">Projects</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">About Me</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
                 </ul>
@@ -47,9 +49,9 @@
     
 
     <!--Avatar and Lead in text-->
-    <div class="container-fluid">
+    <div class="container-fluid animate__animated animate__backInDown">
         <div class="row">
-            <div class="col-sm-6">
+            <div class="col-sm-6 ">
                 <img id="avatar" src="./img/AvatarMaker.svg" alt="">
             </div>
             <div class="col-sm-6 head-text text-center">
@@ -66,15 +68,78 @@
             <div class="row"></div>
                 <div class="col-12"></div>
         </div>
-    </div>    
-
-    <div class="container-fluid pt-3">
-        <h1 class="text-center project">My Projects</h1>
-        <div class="row">
-            <div class="col-sm-6">  
+        <!--Three Columns-->
+        <div class="row text-center justify-content-center">
+            <div class="col-lg-3 threeCol animate__animated" onmouseover="bounceImg(this)" onmouseout="removeBounceImg(this)">
+                <img class="colImages" src="./img/undraw_real-time_sync_o57k.svg" alt="">
+                <h5 class="mt-1">Website Design</h5>
+                <p>
+                    Our approach to website design is to create a website that strengthens your company’s brand while ensuring ease of use and simplicity for your audience.
+                </p>
+                <button type="button" class="btn btn-outline-info">View Portfolio</button>
             </div>
+            <div class="col-lg-3 threeCol animate__animated" onmouseover="bounceImg(this)" onmouseout="removeBounceImg(this)">
+                <img class="colImages" src="./img/undraw_Internet_on_the_go_re_vben.svg" alt="">
+                <h5 class="mt-1">Full Stack Dev</h5>
+                <p>
+                    Our approach to website design is to create a website that strengthens your company’s brand while ensuring ease of use and simplicity for your audience.
+                </p>
+                <button type="button" class="btn btn-outline-info">About Me</button>
+            </div>
+            <div class="col-lg-3 threeCol animate__animated" onmouseover="bounceImg(this)" onmouseout="removeBounceImg(this)">
+                <img class="colImages" src="./img/undraw_dev_productivity_umsq.svg" alt="">
+                <h5 class="mt-1">Application Development</h5>
+                <p>
+                    Our approach to website design is to create a website that strengthens your company’s brand while ensuring ease of use and simplicity for your audience.
+                </p>
+                <button type="button" class="btn btn-outline-info">Contact Me</button>
+            </div>
+            </div>    
+    </div>
+
+    <!--Footer-->
+    <div class="container-fluid">
+        <div class="row align-items-center footer">
+            <div class="col-sm-3 ml-auto text-white">
+                <ul class="footerLinks">
+                    <li>Home</li>
+                    <li>PortFolio</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+
+            <div class="col-sm-3 ml-auto">
+                <ul class="footerIconUl">
+                    <li class="footerIconLi">
+                        <img class="footerIcons" src="./img/github.svg" alt="">
+                    </li>
+                    <li>
+                        <img class="footerIcons" src="./img/linkedin.svg" alt="">
+                    </li>
+                    <li>
+                        <img class="footerIcons" src="./img/gmail.svg" alt="">
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-sm-3 ml-auto">
+                <img class="footerImg animate__animated" src="./img/undraw_product_teardown_elol.svg" alt="" onmouseover="projectEffect(this)" onmouseout="removeProjectEffect(this)">
+                    <p class="text-white">&copy; Copyright: 
+                        <a href="">www.DevDavey.com</a>
+                    </br>
+                    <a href="https://github.com/dev-davey" target="_blank">
+                        Designed by: Dev-Davey
+                    </a>
+                    </p>
+                </div>
+            
+          
         </div>
     </div>
+
+
+        
 
 <script src="./node_modules/jquery/dist/jquery.slim.min.js"></script>
 <script src="./node_modules/popper.js/dist/umd/popper.min.js"></script>

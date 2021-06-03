@@ -1,87 +1,119 @@
-.top-bar{
-    background-color:#437fc7;  
+body {
+  background-color: rgba(211, 211, 211, 0.288);
 }
 
-.top-bar a{
-    color: white;
-    text-decoration: none;
-    margin-right: 3rem;
+.top-bar {
+  background-color: #437fc7;
 }
 
-.top-bar a:hover{
-    text-decoration: underline;
+.top-bar a {
+  color: white;
+  text-decoration: none;
+  margin-right: 3rem;
 }
 
-.navbar{
-    background-color: #edf6ff;
-    font-size: 1.1rem;
-    font-weight: bold;
+.top-bar a:hover {
+  text-decoration: underline;
 }
 
-.nav-item{
-    padding-left: 1rem;
+.navbar {
+  background-color: #d4e5f7;
+  font-size: 1.1rem;
+  font-weight: bold;
 }
 
-.navbar-brand img{
-    height: 150px;
-    width: auto;
-    
+.nav-item {
+  padding-left: 0.5rem;
 }
 
-#avatar{
-    height: 60vh;
-    width: 100%;
-    margin-top: 1rem;
-    margin-right: 0;
-    animation-duration: 3s;
-    animation-name: slidein;
+.navbar-brand img {
+  height: 140px;
+  width: auto;
 }
 
-@keyframes slidein {
-    from {
-        margin-right: 100%;
-        width: 300%;
-    }
-    to{
-        margin-left: 0%;
-        width: 100% ;
-    }
+#avatar {
+  height: 60vh;
+  width: 100%;
+  margin-top: 1rem;
+  margin-right: 0;
 }
 
-.head-text{
-    margin: auto;
-    animation-duration: 2.5s;
-    animation-name: slideup;
+.head-text {
+  margin: auto;
 }
 
-@keyframes slideup{
-    from{
-        margin-top: 100%;
-        height: 300%;
-    }
-    to{
-        margin-top: 12%;
-        height: 100%;
-    }
+.p-text {
+  font-size: 1.5rem;
+  font-style: italic;
 }
 
-.p-text{
-    font-size: 1.5rem;
-    font-style: italic;
+.page-break {
+  height: 2rem;
+  background-color: #437fc7;
 }
 
-.page-break{
-    height: 2rem;
-    background-color: #437fc7;
+.project {
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 3px 3px 3px gray;
 }
 
-.project{
-    font-size: 3rem;
-    font-weight: bold;
-    text-shadow: 3px 3px 3px gray;
+.project-img {
+  height: 50vh;
+  width: 100%;
 }
 
-.project-img{
-    height: 50vh;
-    width: 100%;
+.projects {
+  width: 100%;
+  height: 35vh;
+  margin: 1rem;
+}
+
+.projects img {
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  display: inline-block;
+  border-radius: 7px;
+}
+
+.threeCol {
+  margin: 1rem;
+  background-color: rgba(211, 211, 211, 0.233);
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.colImages {
+  height: 20vh;
+  max-width: 100%;
+}
+
+.footer {
+  height: fit-content;
+  background-color: #437fc7;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 3rem;
+}
+
+.footer a {
+  color: white;
+}
+
+.footerLinks {
+  list-style: none;
+}
+
+.footerIconUl {
+  list-style: none;
+}
+
+.footerIcons {
+  height: 5vh;
+  margin: 3px;
+}
+
+.footerImg {
+  height: 6rem;
 }
