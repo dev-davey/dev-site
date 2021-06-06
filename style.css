@@ -1,5 +1,39 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: rgba(211, 211, 211, 0.288);
+}
+
+h1 {
+  color: rgb(61, 59, 59);
+  font-family: "Raleway", sans-serif;
+  font-size: 2.3rem;
+  font-weight: 800;
+  line-height: 72px;
+  margin: 0 0 24px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: rgb(61, 59, 59);
+  font-family: "Raleway", sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 36px;
+  margin: 0 0 24px;
+  text-align: center;
+}
+
+p {
+  color: rgb(61, 59, 59);
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+  margin: 0 0 24px;
 }
 
 .top-bar {
@@ -17,13 +51,12 @@ body {
 }
 
 .navbar {
-  background-color: #d4e5f7;
-  font-size: 1.1rem;
+  background-color: #cae0fc;
   font-weight: bold;
 }
 
 .nav-item {
-  padding-left: 0.5rem;
+  padding-left: 1.5rem;
 }
 
 .navbar-brand img {
@@ -36,10 +69,6 @@ body {
   width: 100%;
   margin-top: 1rem;
   margin-right: 0;
-}
-
-.head-text {
-  margin: auto;
 }
 
 .p-text {
@@ -66,7 +95,6 @@ body {
 .projects {
   width: 100%;
   height: 35vh;
-  margin: 1rem;
 }
 
 .projects img {
@@ -79,7 +107,6 @@ body {
 
 .threeCol {
   margin: 1rem;
-  background-color: rgba(211, 211, 211, 0.233);
   padding: 5px;
   border-radius: 10px;
 }
@@ -90,10 +117,9 @@ body {
 }
 
 .footer {
-  height: fit-content;
   background-color: #437fc7;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 7%;
+  margin-right: 7%;
   padding: 3rem;
 }
 
@@ -116,4 +142,9 @@ body {
 
 .footerImg {
   height: 6rem;
+}
+
+.skinny-break {
+  height: 1px;
+  background-color: #437fc7;
 }

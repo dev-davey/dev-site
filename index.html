@@ -10,12 +10,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="undefined" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
 </head>
-<body>
+<div>
 
     <!--Top Bar-->
     <div class="top-bar">
         <div class="container-fluid">
             <div class="row">
+                <a id="top-page"></a>
                 <div class="col-12 text-right">
                     <a target="_blank" href="https://github.com/dev-davey">Visit My GitHub</a>
                 </div>
@@ -37,10 +38,10 @@
 
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
-                    <li class="nav-item"><a href="./projects.html" class="nav-link">Projects</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">About Me</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="#top-page" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#aboutMe" class="nav-link">About Me</a></li>
+                    <li class="nav-item"><a href="#top-portfolio" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#contactNav" class="nav-link">Contact</a></li>
                 </ul>
             </div>
 
@@ -54,53 +55,200 @@
             <div class="col-sm-6 ">
                 <img id="avatar" src="./img/AvatarMaker.svg" alt="">
             </div>
-            <div class="col-sm-6 head-text text-center">
+            <div class="col-sm-6 head-text text-center my-auto">
                 <h1>Hello My Name Is David Mason</h1>
                 <p class="p-text">I am a full stack web devolper.  I specialize in JavaScipt, React, HTML and CSS for beautiful Website design and Application Development.</p>
-                <button type="button" class="btn btn-outline-info btn-lg">See My Work</button>
+                <button type="button" class="btn btn-outline-primary btn-lg">See My Work</button>
+                <a id="aboutMe"></a>
             </div>        
         </div>
-    </div>
-
-    
-    <div class="container-fluid">
-        <div class="page-break mt-2 pb-2">
-            <div class="row"></div>
-                <div class="col-12"></div>
+        <div class="row page-break mt-2 pb-2">
+            <div class="col-12"></div>
         </div>
+    
         <!--Three Columns-->
         <div class="row text-center justify-content-center">
             <div class="col-lg-3 threeCol animate__animated" onmouseover="bounceImg(this)" onmouseout="removeBounceImg(this)">
                 <img class="colImages" src="./img/undraw_real-time_sync_o57k.svg" alt="">
-                <h5 class="mt-1">Website Design</h5>
+                <h2 class="mt-1">Website Design</h2>
                 <p>
                     Our approach to website design is to create a website that strengthens your company’s brand while ensuring ease of use and simplicity for your audience.
                 </p>
-                <button type="button" class="btn btn-outline-info">View Portfolio</button>
+                <button type="button" class="btn btn-outline-primary">View Portfolio</button>
             </div>
+            
             <div class="col-lg-3 threeCol animate__animated" onmouseover="bounceImg(this)" onmouseout="removeBounceImg(this)">
                 <img class="colImages" src="./img/undraw_Internet_on_the_go_re_vben.svg" alt="">
-                <h5 class="mt-1">Full Stack Dev</h5>
+                <h2 class="mt-1">Full Stack Dev</h2>
                 <p>
                     Our approach to website design is to create a website that strengthens your company’s brand while ensuring ease of use and simplicity for your audience.
                 </p>
-                <button type="button" class="btn btn-outline-info">About Me</button>
+                <button type="button" class="btn btn-outline-primary">About Me</button>
             </div>
             <div class="col-lg-3 threeCol animate__animated" onmouseover="bounceImg(this)" onmouseout="removeBounceImg(this)">
                 <img class="colImages" src="./img/undraw_dev_productivity_umsq.svg" alt="">
-                <h5 class="mt-1">Application Development</h5>
+                <h2 class="mt-1">Application Development</h2>
+                <a id="top-portfolio"></a>
                 <p>
                     Our approach to website design is to create a website that strengthens your company’s brand while ensuring ease of use and simplicity for your audience.
                 </p>
-                <button type="button" class="btn btn-outline-info">Contact Me</button>
+               
+                <button type="button" class="btn btn-outline-primary">Contact Me</button> 
             </div>
-            </div>    
+            </div>   
+    
+            <div class="row page-break mt-2 pb-2">
+                <div class="col-12"></div>
+            </div>
+
     </div>
+            
+    
+        
+    
+
+        <!--Portfolio-->
+
+    <div class="container pt-3">
+        <h1 class="text-center animate__animated my-2">Portfolio</h1>
+    
+        <div class="row justify-content-center">
+            <div id="project3" class="col-sm-4 projects animate__animated" onmouseover="projectEffect(this)" onmouseout="removeProjectEffect(this)">
+                <a target="_blank" href="https://sdcountydrone.com/">
+                    <img src="./portfolioImgs/laptop-drone.png" alt=""/>
+                </a>
+            </div>
+            <div class="col-sm-4 my-auto">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati amet animi, facere soluta sapiente quo quisquam provident at asperiores mollitia. Aliquam quod dolore neque? Delectus minima perferendis asperiores exercitationem repudiandae.</p>
+                <div class="text-center">
+                    <button type="button" class="btn btn-outline-primary">View Project</button> 
+                </div>
+            </div> 
+        </div>
+
+        <div class="row mt-2 pb-2">
+            <div class="col-12 skinny-break"></div>
+        </div>
+        
+        <div class="row justify-content-center">
+            <div id="project1" class="projects col-sm-4 animate__animated" onmouseover="projectEffect(this)" onmouseout="removeProjectEffect(this)">
+                <img src="./portfolioImgs/laptop-recipe.png" alt="">
+            </div>
+            <div class="col-sm-4 my-auto">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati amet animi, facere soluta sapiente quo quisquam provident at asperiores mollitia. Aliquam quod dolore neque? Delectus minima perferendis asperiores exercitationem repudiandae.</p>
+                <div class="text-center">
+                    <button type="button" class="btn btn-outline-primary">View Project</button> 
+                </div>
+            </div>  
+        </div>
+
+        <div class="row mt-2 pb-2">
+            <div class="col-12 skinny-break"></div>
+        </div>
+    
+        <div class="row justify-content-center">
+            <div id="project6" class="col-sm-4 projects animate__animated" onmouseover="projectEffect(this)" onmouseout="removeProjectEffect(this)">
+                <img src="./portfolioImgs/laptop-weather.png" alt="">    
+            </div> 
+            <div class="col-sm-4 my-auto">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati amet animi, facere soluta sapiente quo quisquam provident at asperiores mollitia. Aliquam quod dolore neque? Delectus minima perferendis asperiores exercitationem repudiandae.</p>
+                <div class="text-center">
+                    <button type="button" class="btn btn-outline-primary">View Project</button> 
+                </div>
+            </div> 
+        </div>
+
+        <div class="row mt-2 pb-2">
+            <div class="col-12 skinny-break"></div>
+        </div>
+    
+        <div class="row justify-content-center">    
+            <div id="project4" class="col-sm-4 projects animate__animated" onmouseover="projectEffect(this)" onmouseout="removeProjectEffect(this)">
+                <img src="./portfolioImgs/laptop-movies.png" alt="">
+            </div>
+            <div class="col-sm-4 my-auto">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati amet animi, facere soluta sapiente quo quisquam provident at asperiores mollitia. Aliquam quod dolore neque? Delectus minima perferendis asperiores exercitationem repudiandae.</p>
+                <div class="text-center">
+                    <button type="button" class="btn btn-outline-primary">View Project</button> 
+                </div>
+            </div>   
+        </div> 
+    
+        <div class="row mt-2 pb-2">
+            <div class="col-12 skinny-break"></div>
+        </div>
+
+        <div class="row justify-content-center">  
+            <div id="project5" class="col-sm-4 projects animate__animated" onmouseover="projectEffect(this)" onmouseout="removeProjectEffect(this)">
+                <img src="./portfolioImgs/laptopblackJack.png" alt="">
+            </div>  
+            <div class="col-sm-4 my-auto">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati amet animi, facere soluta sapiente quo quisquam provident at asperiores mollitia. Aliquam quod dolore neque? Delectus minima perferendis asperiores exercitationem repudiandae.</p>
+                <div class="text-center">
+                    <button type="button" class="btn btn-outline-primary">View Project</button> 
+                </div>
+            </div> 
+        </div>    
+
+        <div class="row my-4">
+            <div class="col-12 skinny-break"></div>
+        </div>
+        
+        <div class="row justify-content-center">  
+            <div id="project5" class="col-sm-4 projects animate__animated" onmouseover="projectEffect(this)" onmouseout="removeProjectEffect(this)">
+                    <img src="./portfolioImgs/laptop-quote.png" alt=""/>
+            </div>  
+            <div class="col-sm-4 my-auto">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati amet animi, facere soluta sapiente quo quisquam provident at asperiores mollitia. Aliquam quod dolore neque? Delectus minima perferendis asperiores exercitationem repudiandae.</p><a id="contactNav"></a>
+                <div class="text-center">
+                    <button type="button" class="btn btn-outline-primary">View Project</button> 
+                </div>
+            </div> 
+        </div>  
+    </div>
+        
+        <!--Contact Form !-->
+
+        <div class="container-fluid form-container my-5">
+            <div class="row page-break my-4">
+                <div class="col-12"></div>
+            </div>
+
+            <h2 class="text-center">Contact Me Today</h2>
+            <div class="row my-2 justify-content-center">
+                <div class="col-lg-7 contact-form">
+                    <form action="./contact2.php" method="POST">
+                        <input type="text" name="user_name" required="" placeholder="Full Name" class="form-control mb-1">
+                        <input type="email" name="user_email" required="" placeholder="Email" class="form-control mb-1">
+        
+                        <div class="input-group mb-4">
+                            <div class="input-group-prepend">
+                              <label class="input-group-text" for="inputGroupSelect01">Contact Type</label>
+                            </div>
+                            <select class="custom-select" id="inputGroupSelect01" name="subject">
+                              <option selected>Choose...</option>
+                              <option value="real_estate">Application</option>
+                              <option value="personal">Website</option>
+                              <option value="construction">Employment</option>
+                              
+                            </select>
+                          </div>
+                
+                        <textarea rows="12" placeholder="Appointment Details or Questions" required="" class="form-control" name="user_message"></textarea>
+                        <div class="text-right">
+                        <button class="btn btn-outline-primary mt-2" type="submit" value="submit">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>   
+        </div>
+
+        
 
     <!--Footer-->
     <div class="container-fluid">
         <div class="row align-items-center footer">
-            <div class="col-sm-3 ml-auto text-white">
+            <div class="col-sm-3 ml-auto text-white mb-3">
                 <ul class="footerLinks">
                     <li>Home</li>
                     <li>PortFolio</li>
@@ -109,7 +257,7 @@
                 </ul>
             </div>
 
-            <div class="col-sm-3 ml-auto">
+            <div class="col-sm-3 ml-auto mb-3">
                 <ul class="footerIconUl">
                     <li class="footerIconLi">
                         <img class="footerIcons" src="./img/github.svg" alt="">
@@ -133,10 +281,8 @@
                     </a>
                     </p>
                 </div>
-            
-          
+            </div>    
         </div>
-    </div>
 
 
         
