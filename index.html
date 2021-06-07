@@ -29,7 +29,7 @@
         <div class="container">
 
             <a href="index.html" class="navbar-brand">
-                <img src="./img/logo.png" alt="Logo">
+                <img src="./img/logo.png" alt="Logo">   
             </a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"><span
@@ -58,7 +58,9 @@
             <div class="col-sm-6 head-text text-center my-auto">
                 <h1>Hello My Name Is David Mason</h1>
                 <p class="p-text">I am a full stack web devolper.  I specialize in JavaScipt, React, HTML and CSS for beautiful Website design and Application Development.</p>
-                <button type="button" class="btn btn-outline-primary btn-lg">See My Work</button>
+                <a href="#top-portfolio">
+                    <button type="button" class="btn btn-outline-primary btn-lg">See My Work</button>
+                </a>
                 <a id="aboutMe"></a>
             </div>        
         </div>
@@ -74,7 +76,9 @@
                 <p>
                     Our approach to website design is to create a website that strengthens your company’s brand while ensuring ease of use and simplicity for your audience.
                 </p>
-                <button type="button" class="btn btn-outline-primary">View Portfolio</button>
+                <a href="#top-portfolio">
+                    <button type="button" class="btn btn-outline-primary">View Portfolio</button>
+                </a>
             </div>
             
             <div class="col-lg-3 threeCol animate__animated" onmouseover="bounceImg(this)" onmouseout="removeBounceImg(this)">
@@ -83,7 +87,9 @@
                 <p>
                     Our approach to website design is to create a website that strengthens your company’s brand while ensuring ease of use and simplicity for your audience.
                 </p>
-                <button type="button" class="btn btn-outline-primary">About Me</button>
+                <a href="#aboutMe">
+                    <button type="button" class="btn btn-outline-primary">About Me</button>
+                </a>
             </div>
             <div class="col-lg-3 threeCol animate__animated" onmouseover="bounceImg(this)" onmouseout="removeBounceImg(this)">
                 <img class="colImages" src="./img/undraw_dev_productivity_umsq.svg" alt="">
@@ -92,8 +98,9 @@
                 <p>
                     Our approach to website design is to create a website that strengthens your company’s brand while ensuring ease of use and simplicity for your audience.
                 </p>
-               
-                <button type="button" class="btn btn-outline-primary">Contact Me</button> 
+                <a href="#contactNav">
+                    <button type="button" class="btn btn-outline-primary">Contact Me</button> 
+                </a>
             </div>
             </div>   
     
@@ -112,33 +119,32 @@
     <div class="container pt-3">
         <h1 class="text-center animate__animated my-2">Portfolio</h1>
     
-        <div class="row justify-content-center">
-            <div id="project3" class="col-sm-4 projects animate__animated" onmouseover="projectEffect(this)" onmouseout="removeProjectEffect(this)">
-                <a target="_blank" href="https://sdcountydrone.com/">
-                    <img src="./portfolioImgs/laptop-drone.png" alt=""/>
-                </a>
+        <div class="row justify-content-center project-rows">
+            <div id="project3" class="col-md-5 projects animate__animated" onmouseover="projectEffect(this)" onmouseout="removeProjectEffect(this)">
+                <img src="./portfolioImgs/laptop-drone.png" alt=""/>    
             </div>
-            <div class="col-sm-4 my-auto">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati amet animi, facere soluta sapiente quo quisquam provident at asperiores mollitia. Aliquam quod dolore neque? Delectus minima perferendis asperiores exercitationem repudiandae.</p>
-                <div class="text-center">
+            <div class="col-md-5 my-auto text-center">
+                <h5>Platinum Perspectives</h5>
+                <p>Drone photography company, responsive website design with a creative touch to show off the clients hard work and beautful content.</p>
+                <a target="_blank" href="https://sdcountydrone.com/">
                     <button type="button" class="btn btn-outline-primary">View Project</button> 
-                </div>
+                </a>
             </div> 
         </div>
 
-        <div class="row mt-2 pb-2">
+        <div class="row mt-2 ">
             <div class="col-12 skinny-break"></div>
         </div>
         
-        <div class="row justify-content-center">
-            <div id="project1" class="projects col-sm-4 animate__animated" onmouseover="projectEffect(this)" onmouseout="removeProjectEffect(this)">
+        <div class="row justify-content-center project-rows">
+            <div id="project1" class="projects col-md-5 animate__animated" onmouseover="projectEffect(this)" onmouseout="removeProjectEffect(this)">
                 <img src="./portfolioImgs/laptop-recipe.png" alt="">
             </div>
-            <div class="col-sm-4 my-auto">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati amet animi, facere soluta sapiente quo quisquam provident at asperiores mollitia. Aliquam quod dolore neque? Delectus minima perferendis asperiores exercitationem repudiandae.</p>
-                <div class="text-center">
-                    <button type="button" class="btn btn-outline-primary">View Project</button> 
-                </div>
+            <div class="col-md-5 my-auto text-center">
+                <h5>Recipe Application</h5>
+                <p>Utilizing an API to simply search recipes and get all the necesssary information on how to make a dish from the comfort of your home. </p>
+                <button type="button" class="btn btn-outline-primary">View Project</button> 
+                
             </div>  
         </div>
 
@@ -146,15 +152,14 @@
             <div class="col-12 skinny-break"></div>
         </div>
     
-        <div class="row justify-content-center">
-            <div id="project6" class="col-sm-4 projects animate__animated" onmouseover="projectEffect(this)" onmouseout="removeProjectEffect(this)">
+        <div class="row justify-content-center project-rows">
+            <div id="project6" class="col-md-5 projects animate__animated" onmouseover="projectEffect(this)" onmouseout="removeProjectEffect(this)">
                 <img src="./portfolioImgs/laptop-weather.png" alt="">    
             </div> 
-            <div class="col-sm-4 my-auto">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati amet animi, facere soluta sapiente quo quisquam provident at asperiores mollitia. Aliquam quod dolore neque? Delectus minima perferendis asperiores exercitationem repudiandae.</p>
-                <div class="text-center">
-                    <button type="button" class="btn btn-outline-primary">View Project</button> 
-                </div>
+            <div class="col-md-5 my-auto text-center">
+                <h5>Weather Application</h5>
+                <p>Weather app built with React that will give an up to date and accurate weather reading anywhere in the world. </p>
+                <button type="button" class="btn btn-outline-primary">View Project</button> 
             </div> 
         </div>
 
@@ -162,15 +167,14 @@
             <div class="col-12 skinny-break"></div>
         </div>
     
-        <div class="row justify-content-center">    
-            <div id="project4" class="col-sm-4 projects animate__animated" onmouseover="projectEffect(this)" onmouseout="removeProjectEffect(this)">
+        <div class="row justify-content-center project-rows">    
+            <div id="project4" class="col-md-5 projects animate__animated" onmouseover="projectEffect(this)" onmouseout="removeProjectEffect(this)">
                 <img src="./portfolioImgs/laptop-movies.png" alt="">
             </div>
-            <div class="col-sm-4 my-auto">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati amet animi, facere soluta sapiente quo quisquam provident at asperiores mollitia. Aliquam quod dolore neque? Delectus minima perferendis asperiores exercitationem repudiandae.</p>
-                <div class="text-center">
-                    <button type="button" class="btn btn-outline-primary">View Project</button> 
-                </div>
+            <div class="col-md-5 my-auto text-center">
+                <h5>Movie Application</h5>
+                <p>Search through a large library of movies and retrieve all of the film information in this one simple application. </p>
+                <button type="button" class="btn btn-outline-primary">View Project</button> 
             </div>   
         </div> 
     
@@ -178,15 +182,14 @@
             <div class="col-12 skinny-break"></div>
         </div>
 
-        <div class="row justify-content-center">  
-            <div id="project5" class="col-sm-4 projects animate__animated" onmouseover="projectEffect(this)" onmouseout="removeProjectEffect(this)">
+        <div class="row justify-content-center project-rows">  
+            <div id="project5" class="col-md-5 projects animate__animated" onmouseover="projectEffect(this)" onmouseout="removeProjectEffect(this)">
                 <img src="./portfolioImgs/laptopblackJack.png" alt="">
             </div>  
-            <div class="col-sm-4 my-auto">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati amet animi, facere soluta sapiente quo quisquam provident at asperiores mollitia. Aliquam quod dolore neque? Delectus minima perferendis asperiores exercitationem repudiandae.</p>
-                <div class="text-center">
-                    <button type="button" class="btn btn-outline-primary">View Project</button> 
-                </div>
+            <div class="col-md-5 my-auto text-center">
+                <h5>Black Jack Counter</h5>
+                <p>Accurately keep the true card count while playing Black Jack.  Not for use in a casino. </p>
+                <button type="button" class="btn btn-outline-primary">View Project</button> 
             </div> 
         </div>    
 
@@ -194,15 +197,17 @@
             <div class="col-12 skinny-break"></div>
         </div>
         
-        <div class="row justify-content-center">  
-            <div id="project5" class="col-sm-4 projects animate__animated" onmouseover="projectEffect(this)" onmouseout="removeProjectEffect(this)">
+        <div class="row justify-content-center project-rows">  
+            <div id="project5" class="col-md-5 projects animate__animated" onmouseover="projectEffect(this)" onmouseout="removeProjectEffect(this)">
                     <img src="./portfolioImgs/laptop-quote.png" alt=""/>
             </div>  
-            <div class="col-sm-4 my-auto">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati amet animi, facere soluta sapiente quo quisquam provident at asperiores mollitia. Aliquam quod dolore neque? Delectus minima perferendis asperiores exercitationem repudiandae.</p><a id="contactNav"></a>
-                <div class="text-center">
+            <a id="contactNav"></a>
+            <div class="col-md-5 my-auto text-center">
+                <h5>Quote Generator</h5>
+                <p>Random generation of quotes to inspire individuals.</p>
+                <a target="__blank" href="https://dev-davey.github.io/RandomQuoteGenerator/">
                     <button type="button" class="btn btn-outline-primary">View Project</button> 
-                </div>
+                </a>
             </div> 
         </div>  
     </div>
@@ -214,33 +219,32 @@
                 <div class="col-12"></div>
             </div>
 
-            <h2 class="text-center">Contact Me Today</h2>
-            <div class="row my-2 justify-content-center">
-                <div class="col-lg-7 contact-form">
-                    <form action="./contact2.php" method="POST">
-                        <input type="text" name="user_name" required="" placeholder="Full Name" class="form-control mb-1">
-                        <input type="email" name="user_email" required="" placeholder="Email" class="form-control mb-1">
-        
-                        <div class="input-group mb-4">
-                            <div class="input-group-prepend">
-                              <label class="input-group-text" for="inputGroupSelect01">Contact Type</label>
-                            </div>
-                            <select class="custom-select" id="inputGroupSelect01" name="subject">
-                              <option selected>Choose...</option>
-                              <option value="real_estate">Application</option>
-                              <option value="personal">Website</option>
-                              <option value="construction">Employment</option>
-                              
-                            </select>
-                          </div>
+            <section class="get_in_touch">
+                <h5 class="title">Get In Touch</h5>
                 
-                        <textarea rows="12" placeholder="Appointment Details or Questions" required="" class="form-control" name="user_message"></textarea>
-                        <div class="text-right">
-                        <button class="btn btn-outline-primary mt-2" type="submit" value="submit">Send Message</button>
+                <div class="container">
+                    <div class="contact-form row">
+                        <div class="form-field col-lg-6">
+                            <input id="name" class="input-text" type="text" name="">
+                            <label for="name" class="label">Name</label>
                         </div>
-                    </form>
+                        <div class="form-field col-lg-6">
+                            <input id="email" class="input-text" type="email" name="">
+                            <label for="email" class="label">Email</label>
+                        </div>
+                        <div class="form-field col-lg-6">
+                            <input id="company" class="input-text" type="text" name="">
+                            <label for="company" class="label">Company Name</label>
+                        </div>
+                        <div class="form-field col-lg-6">
+                            <input id="phone" class="input-text" type="text" name="">
+                            <label for="phone" class="label">Contact Number</label>
+                        </div>
+                        <textarea rows="9" placeholder="Appointment Details or Questions" required="" class="form-control mt-3" name="user_message"></textarea>
+                        <button class="btn btn-outline-primary mt-2" type="submit" value="submit">Send Message</button>
                 </div>
-            </div>   
+              </div>  
+            </section>  
         </div>
 
         
@@ -250,12 +254,15 @@
         <div class="row align-items-center footer">
             <div class="col-sm-3 ml-auto text-white mb-3">
                 <ul class="footerLinks">
-                    <li>Home</li>
-                    <li>PortFolio</li>
-                    <li>About</li>
-                    <li>Contact</li>
+                    <ul class="footerLinks">
+                        <li class="nav-item"><a href="#top-page" class="nav-link active">Home</a></li>
+                        <li class="nav-item"><a href="#aboutMe" class="nav-link">About Me</a></li>
+                        <li class="nav-item"><a href="#top-portfolio" class="nav-link">Projects</a></li>
+                        <li class="nav-item"><a href="#contactNav" class="nav-link">Contact</a></li>
+                    </ul>
                 </ul>
             </div>
+            
 
             <div class="col-sm-3 ml-auto mb-3">
                 <ul class="footerIconUl">

@@ -2,10 +2,6 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  background-color: rgba(211, 211, 211, 0.288);
-}
-
 h1 {
   color: rgb(61, 59, 59);
   font-family: "Raleway", sans-serif;
@@ -37,7 +33,7 @@ p {
 }
 
 .top-bar {
-  background-color: #437fc7;
+  background-color: #017de2;
 }
 
 .top-bar a {
@@ -78,7 +74,7 @@ p {
 
 .page-break {
   height: 2rem;
-  background-color: #437fc7;
+  background-color: #017de2;
 }
 
 .project {
@@ -94,7 +90,8 @@ p {
 
 .projects {
   width: 100%;
-  height: 35vh;
+  max-width: 100%;
+  margin: 2rem;
 }
 
 .projects img {
@@ -117,7 +114,7 @@ p {
 }
 
 .footer {
-  background-color: #437fc7;
+  background-color: #017de2;
   margin-left: 7%;
   margin-right: 7%;
   padding: 3rem;
@@ -129,6 +126,10 @@ p {
 
 .footerLinks {
   list-style: none;
+}
+
+.footerLinks a:hover {
+  text-decoration: underline;
 }
 
 .footerIconUl {
@@ -146,5 +147,74 @@ p {
 
 .skinny-break {
   height: 1px;
-  background-color: #437fc7;
+  background-color: #017de2;
+}
+
+.project-rows {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.get_in_touch {
+  max-width: 800px;
+  margin: 50px auto;
+  position: relative;
+  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.3);
+  padding: 30px;
+}
+
+.get_in_touch .title {
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  font-size: 2rem;
+  line-height: 48px;
+  padding-bottom: 20px;
+  color: #017de2;
+}
+
+.contact-form .form-field {
+  position: relative;
+  margin: 32px 0;
+}
+
+.contact-form .input-text {
+  display: block;
+  width: 100%;
+  height: 36px;
+  border-width: 0 0 2px 0;
+  border-color: #017de2;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+.contact-form .input-text:focus + .label,
+.contact-form .input-text.not-empty + .label {
+  transform: translateY(-24px);
+}
+.contact-form .input-text:focus {
+  outline: none;
+}
+
+.contact-form .label {
+  position: absolute;
+  left: 20px;
+  bottom: 14px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #017de2;
+  cursor: text;
+  transition: 0.2s ease-in-out;
+}
+
+.contact-form .submit-btn {
+  display: inline-block;
+}
+
+textarea {
+  border-width: 0 0 2px 0;
+  border-color: #017de2;
+  line-height: 26px;
+  font-weight: 400;
 }
