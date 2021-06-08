@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>DevDavey</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="undefined" crossorigin="anonymous">
@@ -16,7 +16,7 @@
     <div class="top-bar">
         <div class="container-fluid">
             <div class="row">
-                <a id="top-page"></a>
+                <a id="home"></a>
                 <div class="col-12 text-right">
                     <a target="_blank" href="https://github.com/dev-davey">Visit My GitHub</a>
                 </div>
@@ -38,10 +38,10 @@
 
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a href="#top-page" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
                     <li class="nav-item"><a href="#aboutMe" class="nav-link">About Me</a></li>
-                    <li class="nav-item"><a href="#top-portfolio" class="nav-link">Projects</a></li>
-                    <li class="nav-item"><a href="#contactNav" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="#portfolio" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
             </div>
 
@@ -50,15 +50,15 @@
     
 
     <!--Avatar and Lead in text-->
-    <div class="container-fluid animate__animated animate__backInDown">
+    <div class="container-fluid ">
         <div class="row">
-            <div class="col-sm-6 ">
+            <div class="col-sm-6 animate__animated animate__backInDown">
                 <img id="avatar" src="./img/AvatarMaker.svg" alt="">
             </div>
             <div class="col-sm-6 head-text text-center my-auto">
                 <h1>Hello My Name Is David Mason</h1>
                 <p class="p-text">I am a full stack web developer.  I specialize in JavaScript, React, HTML and CSS for beautiful Website design and Application Development.</p>
-                <a href="#top-portfolio">
+                <a href="#portfolio">
                     <button type="button" class="btn btn-outline-primary btn-lg">See My Work</button>
                 </a>
                 <a id="aboutMe"></a>
@@ -76,7 +76,7 @@
                 <p>
                     My approach to website design is to build a website that exceeds your company’s brand or personal goals while ensuring ease of use and simplicity for your users.
                 </p>
-                <a href="#top-portfolio">
+                <a href="#portfolio">
                     <button type="button" class="btn btn-outline-primary">View Portfolio</button>
                 </a>
             </div>
@@ -94,11 +94,11 @@
             <div class="col-lg-3 threeCol animate__animated" onmouseover="bounceImg(this)" onmouseout="removeBounceImg(this)">
                 <img class="colImages" src="./img/undraw_dev_productivity_umsq.svg" alt="">
                 <h2 class="mt-1">Application Development</h2>
-                <a id="top-portfolio"></a>
+                <a id="portfolio"></a>
                 <p>
                 Application developments can be one of the most important pieces of a buisiness, whether it's native mobile or online, I ensure high quality easy to use interfaces. 
                 </p>
-                <a href="#contactNav">
+                <a href="#contact">
                     <button type="button" class="btn btn-outline-primary">Contact Me</button> 
                 </a>
             </div>
@@ -188,7 +188,7 @@
             </div>  
             <div class="col-md-5 my-auto text-center">
                 <h5>Quote Generator</h5>
-                <a id="contactNav"></a>
+                <a id="contact"></a>
                 <p>Random generation of quotes to inspire individuals.</p>
                 <a target="__blank" href="https://dev-davey.github.io/RandomQuoteGenerator/">
                     <button type="button" class="btn btn-outline-primary">View Project</button> 
@@ -237,26 +237,32 @@
     <!--Footer-->
     <div class="container-fluid">
         <div class="row footer">
-            <div class="col-md-4 text-white mb-3 text-center">
+            <div class="col-md-4 text-white mb-3 text-center pl-1">
                     <ul class="footerLinks">
-                        <li class="nav-item"><a href="#top-page" class="nav-link active">Home</a></li>
+                        <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
                         <li class="nav-item"><a href="#aboutMe" class="nav-link">About Me</a></li>
-                        <li class="nav-item"><a href="#top-portfolio" class="nav-link">Projects</a></li>
-                        <li class="nav-item"><a href="#contactNav" class="nav-link">Contact</a></li>
+                        <li class="nav-item"><a href="#portfolio" class="nav-link">Projects</a></li>
+                        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
                     </ul>
             </div>
             
 
-            <div class="col-md-4 mb-3 text-center pl-3">
+            <div class="col-md-4 mb-3 text-center pl-4">
                 <ul class="footerIconUl">
                     <li class="footerIconLi">
-                        <img class="footerIcons" src="./img/github.svg" alt="">
+                        <a target="_blank" href="https://github.com/dev-davey">
+                            <img class="footerIcons" src="./img/github.svg" alt="">
+                        </a>
                     </li>
                     <li>
-                        <img class="footerIcons" src="./img/linkedin.svg" alt="">
+                        <a target="_blank" href="https://www.linkedin.com/in/david-mason-3429b469/">
+                            <img class="footerIcons" src="./img/linkedin.svg" alt="">
+                        </a>
                     </li>
                     <li>
-                        <img class="footerIcons" src="./img/gmail.svg" alt="">
+                        <a target="_blank "href="mailto: davey89451@gmail.com">
+                            <img class="footerIcons" src="./img/gmail.svg" alt="">
+                        </a>
                     </li>
                 </ul>
             </div>

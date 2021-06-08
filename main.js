@@ -1,10 +1,10 @@
 function projectEffect(project) {
-  project.classList.add("animate__tada");
+  project.classList.add("animate__swing");
   console.log("working");
 }
 
 function removeProjectEffect(project) {
-  project.classList.remove("animate__tada");
+  project.classList.remove("animate__swing");
 }
 
 
