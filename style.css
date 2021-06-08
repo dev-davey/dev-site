@@ -126,6 +126,7 @@ p {
 
 .footerLinks {
   list-style: none;
+  margin-right: 1px;
 }
 
 .footerLinks a:hover {
