@@ -15,3 +15,9 @@ function bounceImg(img){
 function removeBounceImg(img){
   img.classList.remove("animate__bounce");
 }
+
+function onLinkClick(id) {
+  document.getElementById(id).scrollIntoView();
+  console.log('is this working')
+  // will scroll to 4th h3 element
+}
