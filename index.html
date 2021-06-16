@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="undefined" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/x-icon" href="./img/logo.png" />
     <link rel="stylesheet" href="./style.css">
 </head>
 <div>
-
+   
     <!--Top Bar-->
     <div class="top-bar">
         <div class="container-fluid">
@@ -38,8 +39,8 @@
 
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
-                    <li class="nav-item"><a href="#aboutMe" class="nav-link">About Me</a></li>
+                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#aboutMe" class="nav-link ">About Me</a></li>
                     <li class="nav-item"><a href="#portfolio" class="nav-link">Projects</a></li>
                     <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
@@ -48,7 +49,6 @@
         </div>
     </nav>
     
-
     <!--Avatar and Lead in text-->
     <div class="container-fluid ">
         <div class="row">
@@ -58,14 +58,13 @@
             <div class="col-sm-6 head-text text-center my-auto">
                 <h1>Hello My Name Is David Mason</h1>
                 <p class="p-text">I am a full stack web developer, specializing in JavaScript, React, React-Native, HTML and CSS for beautiful Website design and Application Development.</p>
-                <a href="#portfolio">
+                <a class="nav-link" href="#portfolio">
                     <button type="button" class="btn btn-outline-primary btn-lg">See My Work</button>
                 </a>
-                <a id="aboutMe"></a>
             </div>        
         </div>
         <div class="row page-break mt-2 pb-2">
-            <div class="col-12"></div>
+            <div id="aboutMe" class="col-12"></div>
         </div>
     
         <!--Three Columns-->
@@ -76,7 +75,7 @@
                 <p>
                     My approach to website design is to build a website that exceeds your company’s brand or personal goals while ensuring ease of use and simplicity for your users.
                 </p>
-                <a href="#portfolio">
+                <a class="nav-link" href="#portfolio">
                     <button type="button" class="btn btn-outline-primary">View Portfolio</button>
                 </a>
             </div>
@@ -87,7 +86,7 @@
                 <p>
                     SEO stands for search engine optimization. It is the process of improving your websites visibility to increase its relevant searches. The higher visibility your webpages have in search results, the more likely you are to garner attention.  I specialize in getting eyes on your site through this process.
                 </p>
-                <a href="#aboutMe">
+                <a class="nav-link" href="#aboutMe">
                     <button type="button" class="btn btn-outline-primary">About Me</button>
                 </a>
             </div>
@@ -97,15 +96,14 @@
                 <p>
                 Application developments can be one of the most important pieces of a buisiness, whether it's native mobile or online, I ensure high quality easy to use interfaces. 
                 </p>
-                <a id="portfolio"></a>
-                <a href="#contact">
+                <a class="nav-link" href="#contact">
                     <button type="button" class="btn btn-outline-primary">Contact Me</button> 
                 </a>
             </div>
             </div>   
     
             <div class="row page-break mt-2 pb-2">
-                <div class="col-12"></div>
+                <div id="portfolio" class="col-12"></div>
             </div>
 
     </div>
@@ -198,14 +196,20 @@
                 <a target="__blank" href="https://dev-davey.github.io/RandomQuoteGenerator/">
                     <button type="button" class="btn btn-outline-primary">View Project</button> 
                 </a>
-            </div> 
+            </div>
+        </div> 
+
+            <div class="row my-4">
+                <div class="col-12 skinny-break"></div>
+            </div>
+            
             <div class="row justify-content-center project-rows">  
                 <div id="project5" class="col-md-5 projects animate__animated" onmouseover="projectEffect(this)" onmouseout="removeProjectEffect(this)">
                         <img src="./img/laptop-(3).png" alt=""/>
                 </div>  
             <div class="col-md-5 my-auto text-center">
                 <h5>BlackJack Counter</h5>
-                <p>Application using a card counting algorithm that tracks all metrics needed for a player to keep a perfect card count.  Not for use in a casino.</p>
+                <p>Application built with a custom card counting algorithm that tracks all metrics needed for a player to keep a perfect card count.  Not for use in a casino.</p>
                 <a target="__blank" href="https://dev-davey.github.io/blackJackCounter/">
                     <button type="button" class="btn btn-outline-primary">View Project</button> 
                 </a>
@@ -262,10 +266,10 @@
                    <div class="col-md-3 col-sm-6 col-xs-12 segment-two">
                         <h3>Navigation</h3>
                         <ul>
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="#aboutMe">About Me</a></li>
-                            <li><a href="#portfolio" >Projects</a></li>
-                            <li><a href="#contact">Contact</a></li>
+                            <li><a class="nav-link" href="#home">Home</a></li>
+                            <li><a class="nav-link" href="#aboutMe">About Me</a></li>
+                            <li><a class="nav-link" href="#portfolio" >Projects</a></li>
+                            <li><a class="nav-link"href="#contact">Contact</a></li>
                         </ul>
                    </div>
                    <div class="col-md-3 col-sm-6 col-xs-12 segment-three">
@@ -298,7 +302,7 @@
 
         
 
-<script src="./node_modules/jquery/dist/jquery.slim.min.js"></script>
+<script src="./node_modules/jquery/dist/jquery.min.js"></script>
 <script src="./node_modules/popper.js/dist/umd/popper.min.js"></script>
 <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="./main.js"></script>  

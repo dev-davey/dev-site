@@ -21,3 +21,12 @@ function onLinkClick(id) {
   console.log('is this working')
   // will scroll to 4th h3 element
 }
+
+
+$(document).on('click', 'a.nav-link', function (event) {
+    event.preventDefault();
+
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top - $(".navbar.sticky-top").height()
+    }, 500);
+});
