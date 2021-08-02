@@ -117,6 +117,23 @@
     <div class="container pt-3">
         <h1 class="text-center animate__animated my-2">Portfolio</h1>
     
+        <div class="row justify-content-center project-rows">  
+            <div id="project5" class="col-md-5 projects animate__animated" onmouseover="projectEffect(this)" onmouseout="removeProjectEffect(this)">
+                    <img src="./portfolioImgs/laptopcrypto.png" alt=""/>
+            </div>  
+            <div class="col-md-5 my-auto text-center">
+                <h5>CryptoMonitor</h5>
+                <p>A cryptocurrency monitoring application that tracks up to date real time data for over a 1000 cryptocurrencies.  Web App includes custom built charts and other data montoring features.</p>
+                <a target="__blank" href="https://cryptomonitor.live">
+                    <button type="button" class="btn btn-outline-primary">View Project</button> 
+                </a>
+            </div>
+        </div> 
+
+        <div class="row my-4">
+            <div class="col-12 skinny-break"></div>
+        </div>
+        
         <div class="row justify-content-center project-rows">
             <div id="project3" class="col-md-5 projects animate__animated" onmouseover="projectEffect(this)" onmouseout="removeProjectEffect(this)">
                 <img src="./portfolioImgs/laptop-drone.png" alt=""/>    
@@ -152,22 +169,6 @@
             <div class="col-12 skinny-break"></div>
         </div>
     
-        <div class="row justify-content-center project-rows">
-            <div id="project6" class="col-md-5 projects animate__animated" onmouseover="projectEffect(this)" onmouseout="removeProjectEffect(this)">
-                <img src="./portfolioImgs/laptop-weather.png" alt="">    
-            </div> 
-            <div class="col-md-5 my-auto text-center">
-                <h5>Weather Application</h5>
-                <p>Weather app built with React that will give an up to date and accurate weather reading anywhere in the world. </p>
-                <a target="_blank" href="https://dev-davey.github.io/weather-app/">
-                 <button type="button" class="btn btn-outline-primary">View Project</button> 
-                </a>
-            </div> 
-        </div>
-
-        <div class="row mt-2 pb-2">
-            <div class="col-12 skinny-break"></div>
-        </div>
     
         <div class="row justify-content-center project-rows">    
             <div id="project4" class="col-md-5 projects animate__animated" onmouseover="projectEffect(this)" onmouseout="removeProjectEffect(this)">
@@ -186,29 +187,13 @@
             <div class="col-12 skinny-break"></div>
         </div>
         
-        <div class="row justify-content-center project-rows">  
-            <div id="project5" class="col-md-5 projects animate__animated" onmouseover="projectEffect(this)" onmouseout="removeProjectEffect(this)">
-                    <img src="./portfolioImgs/laptop-quote.png" alt=""/>
-            </div>  
-            <div class="col-md-5 my-auto text-center">
-                <h5>Quote Generator</h5>
-                <p>Random generation of quotes to inspire individuals.</p>
-                <a target="__blank" href="https://dev-davey.github.io/RandomQuoteGenerator/">
-                    <button type="button" class="btn btn-outline-primary">View Project</button> 
-                </a>
-            </div>
-        </div> 
-
-            <div class="row my-4">
-                <div class="col-12 skinny-break"></div>
-            </div>
             
             <div class="row justify-content-center project-rows">  
                 <div id="project5" class="col-md-5 projects animate__animated" onmouseover="projectEffect(this)" onmouseout="removeProjectEffect(this)">
                         <img src="./img/laptop-(3).png" alt=""/>
                 </div>  
             <div class="col-md-5 my-auto text-center">
-                <h5>BlackJack Counter</h5>
+                <h5>Card Counting Algorithm</h5>
                 <p>Application built with a custom card counting algorithm that tracks all metrics needed for a player to keep a perfect card count.  Not for use in a casino.</p>
                 <a target="__blank" href="https://dev-davey.github.io/blackJackCounter/">
                     <button type="button" class="btn btn-outline-primary">View Project</button> 
@@ -226,29 +211,30 @@
 
             <section class="get_in_touch">
                 <h5 class="title">Get In Touch</h5>
-                
+                <form action="./contact.php" method="POST">
                 <div class="container">
                     <div class="contact-form row">
                         <div class="form-field col-lg-6">
-                            <input id="name" class="input-text" type="text" name="">
+                            <input id="name" class="input-text" type="text" name="user_name" required>
                             <label for="name" class="label">Name</label>
                         </div>
                         <div class="form-field col-lg-6">
-                            <input id="email" class="input-text" type="email" name="">
+                            <input id="email" class="input-text" type="email" name="user_email" required>
                             <label for="email" class="label">Email</label>
                         </div>
                         <div class="form-field col-lg-6">
-                            <input id="company" class="input-text" type="text" name="">
+                            <input id="company" class="input-text" type="text" name="user_last" required>
                             <label for="company" class="label">Company Name</label>
                         </div>
                         <div class="form-field col-lg-6">
-                            <input id="phone" class="input-text" type="text" name="">
+                            <input id="phone" class="input-text" type="text" name="phone_number" required>
                             <label for="phone" class="label">Contact Number</label>
                         </div>
-                        <textarea rows="9" placeholder="Appointment Details or Questions" required="" class="form-control mt-3" name="user_message"></textarea>
+                        <textarea rows="9" placeholder="Appointment Details or Questions" required class="form-control mt-3" name="user_message"></textarea>
                         <button class="btn btn-outline-primary mt-2" type="submit" value="submit">Send Message</button>
                 </div>
-              </div>  
+              </div>
+            </form>  
             </section>  
         </div>
 

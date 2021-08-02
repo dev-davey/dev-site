@@ -1,6 +1,5 @@
 function projectEffect(project) {
   project.classList.add("animate__swing");
-  console.log("working");
 }
 
 function removeProjectEffect(project) {
@@ -18,7 +17,6 @@ function removeBounceImg(img){
 
 function onLinkClick(id) {
   document.getElementById(id).scrollIntoView();
-  console.log('is this working')
   // will scroll to 4th h3 element
 }
 
