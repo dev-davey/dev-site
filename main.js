@@ -1,5 +1,10 @@
+var previousUrl = document.referrer
+console.log(previousUrl)
+
+
 function projectEffect(project) {
   project.classList.add("animate__swing");
+  console.log(project)
 }
 
 function removeProjectEffect(project) {
@@ -17,6 +22,7 @@ function removeBounceImg(img){
 
 function onLinkClick(id) {
   document.getElementById(id).scrollIntoView();
+  console.log('what is this')
   // will scroll to 4th h3 element
 }
 
