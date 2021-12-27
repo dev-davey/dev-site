@@ -59,7 +59,7 @@
             </div>
             <div class="col-sm-5 head-text text-center my-auto mx-auto">
                 <h1 class="mt-3">Hello My Name Is David Mason</h1>
-                <p class="p-text">I am a full stack web developer, specializing in JavaScript, React, React-Native, HTML and CSS for beautiful Website design and Application Development.</p>
+                <p class="p-text">I am a front end web developer, specializing in JavaScript, React, React-Native, HTML and CSS for beautiful Website design and Application Development.</p>
                 <a class="nav-link" href="#portfolio">
                     <button type="button" class="btn btn-outline-primary btn-lg">See My Work</button>
                 </a>
@@ -109,15 +109,28 @@
             </div>
 
     </div>
-            
-    
         
-    
-
         <!--Portfolio-->
 
     <div class="container pt-3">
         <h1 class="text-center animate__animated my-2">Portfolio</h1>
+
+        <div class="row justify-content-center project-rows">    
+            <div id="project4" class="col-md-5 projects animate__animated" onmouseover="projectEffect(this)" onmouseout="removeProjectEffect(this)">
+                <img src="./portfolioImgs/image.png" alt="">
+            </div>
+            <div class="col-md-5 my-auto text-center">
+                <h5>Willow Help Center</h5>
+                <p>Custom help center for customers to troubleshoot their own technical devices.  Conditional JavaScript logic is used to combine multiple logic trees for an easy to use, interactive trouble shooting guide. </p>
+                <a target="_blank" href="https://onewillow.com/">
+                    <button type="button" class="btn btn-outline-primary">View Website</button> 
+                </a>
+            </div>   
+        </div> 
+
+        <div class="row mt-2 pb-2">
+            <div class="col-12 skinny-break"></div>
+        </div>
     
         <div class="row justify-content-center project-rows">  
             <div id="project5" class="col-md-5 projects animate__animated" onmouseover="projectEffect(this)" onmouseout="removeProjectEffect(this)">
@@ -125,7 +138,7 @@
             </div>  
             <div class="col-md-5 my-auto text-center">
                 <h5>CryptoMonitor</h5>
-                <p>A cryptocurrency monitoring application that tracks up to date real time data for over a 1000 cryptocurrencies.  Web App includes custom built charts and other data montoring features.</p>
+                <p>Cryptocurrency monitoring application that tracks up to date real time data of the top 1000 cryptocurrencies by market cap.  Web App includes custom built charts and other data montoring features.</p>
                 <a target="__blank" href="https://cryptomonitor.live">
                     <button type="button" class="btn btn-outline-primary">View Project</button> 
                 </a>
@@ -144,7 +157,7 @@
                 <h5>Platinum Perspectives</h5>
                 <p>Drone photography company, responsive website design with a creative touch to show off the clients hard work and beautiful content.</p>
                 <a target="_blank" href="https://sdcountydrone.com/">
-                    <button type="button" class="btn btn-outline-primary">View Project</button> 
+                    <button type="button" class="btn btn-outline-primary">View Website</button> 
                 </a>
             </div> 
         </div>
@@ -165,24 +178,6 @@
                 </a> 
                 
             </div>  
-        </div>
-
-        <div class="row mt-2 pb-2">
-            <div class="col-12 skinny-break"></div>
-        </div>
-    
-    
-        <div class="row justify-content-center project-rows">    
-            <div id="project4" class="col-md-5 projects animate__animated" onmouseover="projectEffect(this)" onmouseout="removeProjectEffect(this)">
-                <img src="./portfolioImgs/laptop-movies.png" alt="">
-            </div>
-            <div class="col-md-5 my-auto text-center">
-                <h5>Movie Application</h5>
-                <p>Search through a large library of movies and retrieve all of the film information in this one simple application. </p>
-                <a target="_blank" href="https://dev-davey.github.io/movie-app/">
-                    <button type="button" class="btn btn-outline-primary">View Project</button> 
-                </a>
-            </div>   
         </div> 
 
         <div class="row my-4">
@@ -196,7 +191,7 @@
                 </div>  
             <div class="col-md-5 my-auto text-center">
                 <h5>Card Counting Algorithm</h5>
-                <p>Application built with a custom card counting algorithm that tracks all metrics needed for a player to keep a perfect card count.  Not for use in a casino.</p>
+                <p>Application built with a custom card counting algorithm that tracks all metrics needed for a player to keep a perfect card count.</p>
                 <a target="__blank" href="https://dev-davey.github.io/blackJackCounter/">
                     <button type="button" class="btn btn-outline-primary">View Project</button> 
                 </a>
