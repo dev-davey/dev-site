@@ -56,8 +56,9 @@ p {
 }
 
 .navbar {
-  background-color: #35c2ff;
+  background-color: #017de2;
   font-weight: bold;
+  padding: 20px;
 }
 
 .nav-item {
@@ -78,11 +79,6 @@ p {
   text-shadow: 0 0 4px black;
 }
 
-.navbar-brand img {
-  height: 80px;
-  width: auto;
-}
-
 #avatar {
   height: 60vh;
   width: 100%;
@@ -101,7 +97,7 @@ p {
 }
 
 .page-break {
-  height: 2rem;
+  height: 1rem;
   background-color: #017de2;
 }
 
